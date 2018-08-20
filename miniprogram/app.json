@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib"
+  ],
+  "window": {
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "老飛士多店",
+    "navigationBarTextStyle": "black"
+   },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#1aaba8",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/menu_index_select.png",
+        "iconPath": "images/menu_index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/menu_category_select.png",
+        "iconPath": "images/menu_category.png",
+        "pagePath": "pages/index/index",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "images/menu_juan_select.png",
+        "iconPath": "images/menu_juan.png",
+        "pagePath": "pages/index/index",
+        "text": "优惠券"
+      }
+    ]
+  }  
+}
