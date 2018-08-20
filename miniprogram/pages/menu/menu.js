@@ -15,7 +15,7 @@ Page({
           "screenName":"衣服",
           "childrenArray" : 
             {
-              "showImageUrl":"https://image.baidu.com/search/detail?ct=503316480&z=&tn=baiduimagedetail&ipn=d&word=gucci&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=-1&cs=1896063265,527355457&os=2838182720,2379205598&simid=8214401,786908147&pn=8&rn=1&di=82654134531&ln=1515&fr=&fmq=1534778965029_R&ic=0&s=undefined&se=&sme=&tab=0&width=&height=&face=undefined&is=0,0&istype=2&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fwww.xinxilanlvcheng.com%2F%257E%2Fmedia%2FImages%2FChinese%2520Website%2FDevelopment%2FOperator%2FGucci%2F01.jpg%3Fw%3D690&rpstart=0&rpnum=0&adpicid=0",
+              "showImageUrl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4015889879,4260009573&fm=27&gp=0.jpg",
               "childrenScreenArray":[
                 {
                    "screenName":"女装",

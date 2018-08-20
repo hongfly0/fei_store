@@ -1,12 +1,12 @@
 /* pages/menu/menu.wxss */
 .classify{
-  margin-top:100rpx;
+  margin-top:0rpx;
 }
 .left-navbar{
   position:absolute;
   left:0;
   width:25%;
-  height:90%;
+  height:100%;
   background-color:#eee;
   font-size:15px;
 }
