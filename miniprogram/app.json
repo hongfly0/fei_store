@@ -7,7 +7,8 @@
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
     "pages/chooseLib/chooseLib",
-    "pages/menu/menu"
+    "pages/menu/menu",
+    "pages/coupon/coupon"
   ],
   "window": {
     "backgroundColor": "#eeeeee",
@@ -30,13 +31,13 @@
       {
         "selectedIconPath": "images/menu_category_select.png",
         "iconPath": "images/menu_category.png",
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/menu/menu",
         "text": "分类"
       },
       {
         "selectedIconPath": "images/menu_juan_select.png",
         "iconPath": "images/menu_juan.png",
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/coupon/coupon",
         "text": "优惠券"
       }
     ]
