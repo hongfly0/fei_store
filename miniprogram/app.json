@@ -6,7 +6,8 @@
     "pages/databaseGuide/databaseGuide",
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/chooseLib/chooseLib",
+    "pages/menu/menu"
   ],
   "window": {
     "backgroundColor": "#eeeeee",
@@ -14,7 +15,7 @@
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "老飛士多店",
     "navigationBarTextStyle": "black"
-   },
+  },
   "tabBar": {
     "color": "#a9b7b7",
     "selectedColor": "#1aaba8",
@@ -39,5 +40,5 @@
         "text": "优惠券"
       }
     ]
-  }  
+  }
 }
