@@ -1,73 +1,53 @@
-<!--index.wxml-->
-<view class="container">
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
-<view>Hello World</view>
 
-  <!-- <view>
-    <text catchtap="click" class='window'></text>
-  </view> -->
-  <!-- 用户 openid -->
-  <!--
-  <view class="userinfo">
-    <button 
-      open-type="getUserInfo" 
-      bindgetuserinfo="onGetUserInfo"
-      class="userinfo-avatar"
-      style="background-image: url({{avatarUrl}})"
-    ></button>
-    <view>
-      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+
+<scroll-view scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="loadImages">
+<view class="swiper-container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+      <swiper-item>
+        <image src="{{item}}" class="img" bindtap="swipclick" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+  <view class="goods" style="width:100%;margin-top:5px;">
+    <view class="img_item">
+      <view wx:for="{{col1}}" wx:key="id" > 
+      <navigator url='../goods/goods?id={{item.id}}'>
+      <view class="item_info">
+        <image src="{{item.imageurl}}" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+            <view class="product-name">
+              {{item.name}}
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{item.newprice}}</p>  
+              <p class="product-price-old">￥{{item.oldprice}}</p> 
+               <p class="discount">{{item.discount}}折</p>   
+            </view>
+            </navigator>
+      </view>
+    </view>
+    <view class="img_item">
+      <view wx:for="{{col2}}" wx:key="id">
+      <navigator url='../goods/goods?id={{item.id}}'>
+      <view class="item_info" bindtap="goods_item" data-id='{{item.id}}'>
+        <image src="{{item.imageurl}}" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+            <view class="product-name">
+            <navigator url="../menu/menu"> {{item.name}}</navigator>
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{item.newprice}}</p>  
+              <p class="product-price-old">￥{{item.oldprice}}</p> 
+               <p class="discount">{{item.discount}}折</p>   
+            </view>
+            </navigator>
+      </view>
     </view>
   </view>
-  -->
-
-
-  <!-- 上传图片
-  <view class="uploader">
-    <view class="uploader-text" bindtap="doUpload">
-      <text>上传图片</text>
-    </view>
-    <view class="uploader-container" wx:if="{{imgUrl}}">
-      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
-    </view>
-  </view>
- -->
-
-  <!-- 操作数据库 
-  <view class="uploader">
-    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
-      <text>前端操作数据库</text>
-    </navigator>
-  </view>
--->
-  <!-- 新建云函数 
-  <view class="uploader">
-    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
-      <text>快速新建云函数</text>
-    </navigator>
-  </view>
-  -->
+</scroll-view>
+ <view style="display:block">
+  <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.imageurl}}" bindload="onImageLoad"></image>
 </view>

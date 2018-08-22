@@ -8,13 +8,14 @@
     "pages/deployFunctions/deployFunctions",
     "pages/chooseLib/chooseLib",
     "pages/menu/menu",
-    "pages/coupon/coupon"
+    "pages/coupon/coupon",
+    "pages/goods/goods"
   ],
   "window": {
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "老飛士多店",
+    "navigationBarTitleText": "老飞士多店",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
