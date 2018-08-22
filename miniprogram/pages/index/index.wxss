@@ -9,11 +9,15 @@ page{
   margin: 2px;
   display: inline-block;
   vertical-align: top;
-  background-color: #ffffff;
   font-size: 24rpx;
 }
 .item_info{
   border-top:0px dashed red;
+  background-color: #ffffff;
+}
+.item_box {
+  margin-top:4px; 
+  background-color: #ffffff;
 }
 .product-name{
   color: #000;
@@ -37,7 +41,6 @@ page{
 }
 .product-price-wrap{
   margin-left: 5px;
-  background-color: #fff;
   color: #fff;
   font-size: 16px;
 }
